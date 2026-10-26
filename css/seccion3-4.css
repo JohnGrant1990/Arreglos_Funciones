@@ -1,0 +1,79 @@
+/* Paleta: Morado, Verde y Naranja sobre base oscura */
+body {
+    background-color: #18122B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+h2 {
+    color: #c084fc;
+}
+
+/* Menú Desplegable con acento en Naranja y fondo Morado */
+.menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+    background-color: #f97316;
+    color: #ffffff;
+    padding: 8px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(249, 115, 22, 0.4);
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.menu-icon:hover {
+    background-color: #ea580c;
+}
+
+.login-box {
+    display: none;
+    background-color: #581c87;
+    padding: 22px;
+    width: 320px;
+    margin-top: 12px;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: 2px solid #a855f7;
+}
+
+.login-box .form-label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #e9d5ff;
+}
+
+.login-box .form-control {
+    border-radius: 6px;
+    border: none;
+    padding: 8px 12px;
+}
+
+.login-box button {
+    font-weight: 600;
+    margin-top: 8px;
+    background-color: #f97316;
+    border: none;
+    color: white;
+}
+
+.login-box button:hover {
+    background-color: #ea580c;
+}
+
+/* Estilos para la lista de Países con acentos en Verde Esmeralda */
+#listaPaises .list-group-item {
+    background-color: #241b35;
+    color: #f3f4f6;
+    border: 1px solid #3b2c5c;
+    border-left: 5px solid #22c55e;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#listaPaises .list-group-item:hover {
+    transform: translateX(6px);
+    background-color: #2e2247;
+}

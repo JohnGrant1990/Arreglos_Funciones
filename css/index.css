@@ -1,0 +1,78 @@
+/* Paleta: Negro, Morado y Azul */
+:root {
+    --bg-negro: #0f1016;
+    --card-negro: #1a1c23;
+    --morado-principal: #7c3aed;
+    --morado-claro: #a78bfa;
+    --azul-acento: #3b82f6;
+    --text-white: #f3f4f6;
+}
+
+body {
+    background-color: var(--bg-negro);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-white);
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado con degradado Morado y Negro */
+header {
+    background: linear-gradient(135deg, #12131a, var(--morado-principal));
+    color: white;
+    padding: 40px 15px;
+    border-bottom: 4px solid var(--azul-acento);
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+}
+
+header h1 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* Tarjetas de Navegación */
+.card-menu {
+    border: 2px solid var(--morado-principal);
+    border-radius: 12px;
+    background-color: var(--card-negro);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    color: white;
+}
+
+.card-menu:hover {
+    transform: translateY(-8px);
+    border-color: var(--azul-acento);
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--morado-claro);
+}
+
+.btn-outline-primary {
+    border-color: var(--azul-acento);
+    color: var(--azul-acento);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--azul-acento);
+    color: #ffffff;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #0b0c10;
+    color: #9ca3af;
+    padding: 25px 0;
+    margin-top: 50px;
+    border-top: 3px solid var(--morado-principal);
+}
+
+footer a {
+    color: var(--morado-claro);
+    text-decoration: none;
+    font-weight: 600;
+}

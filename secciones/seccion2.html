@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sección II</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/seccion2.css">
+</head>
+<body class="container my-5">
+    <a href="/index.html" class="btn btn-secondary mb-4">Volver al Menú</a>
+    <h1 class="mb-4">Ejercicios: While y For</h1>
+
+    <div class="row g-4">
+        <!-- 1. Suma impares (Usando WHILE) -->
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h3>1. Suma Impares (1-100)</h3>
+                <p>Calcula la suma de los números impares del 1 al 100 usando un ciclo <code>while</code>.</p>
+                <button class="btn btn-primary mt-auto" onclick="sumarImparesWhile()">Calcular con While</button>
+                <p id="resImpares" class="fw-bold mt-2"></p>
+            </div>
+        </div>
+
+        <!-- 2. Asteriscos (Usando WHILE) -->
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h3>2. Mostrar Asteriscos</h3>
+                <label class="form-label">Cantidad de asteriscos:</label>
+                <input type="number" id="inputAsteriscos" class="form-control mb-2" placeholder="Ej. 10" min="1">
+                <button class="btn btn-primary" onclick="mostrarAsteriscosWhile()">Generar con While</button>
+                <p id="resAsteriscos" class="mt-2"></p>
+            </div>
+        </div>
+
+        <!-- 3. Tablas de multiplicar (Usando FOR anidado) -->
+        <div class="col-md-4">
+            <div class="card p-3 h-100">
+                <h3>3. Tablas (1 al 10)</h3>
+                <p>Genera las tablas del 1 al 10 usando ciclos <code>for</code> anidados.</p>
+                <button class="btn btn-primary mt-auto" onclick="verTablasFor()">Mostrar Tablas con For</button>
+                <div id="resTablas" class="mt-2" style="max-height: 150px; overflow-y: auto;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/seccion2.js"></script>
+</body>
+</html>
